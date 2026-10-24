@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+        <!-- bootstrap start -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap end -->
+
+     <!-- font awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+     <!-- css start -->
+      <link rel="stylesheet" href="style.css">
+     <!-- css end -->
+</head>
+
+<!-- nav start -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary forwok">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold setwh" href="#"><img src="./assesst/logo (1).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Toman</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="./dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./employee.html" disabled>Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./leave.html">Leave</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./profile.html">Profile</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link " href="./payslip">Pay-Slip</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./setting.html">Setting</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- nav end -->
+
+
+<div class="container-fluid my-4 px-4">
+    <div class="card p-3 shadow-sm">
+        
+        <!-- Header: Title and Add Button -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="fw-bold m-0">Manage Employees</h3>
+            <button class="btn btn-primary btn-sm">+ Add Employee</button>
+        </div>
+
+        <!-- Controls: Search and Filter -->
+        <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+            <div class="position-relative flex-grow-1" style="max-width: 300px;">
+                <i class="fa-solid fa-magnifying-glass position-absolute text-muted" style="left: 12px; top: 50%; transform: translateY(-50%); font-size: 13px;"></i>
+                <input type="text" class="form-control form-control-sm ps-4" placeholder="Search employees...">
+            </div>
+            <button class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-filter me-1"></i>Filter</button>
+        </div>
+
+        <!-- Table Responsive Layout -->
+        <div class="table-responsive border rounded">
+            <table class="table table-hover align-middle mb-0 text-nowrap">
+                <thead class="table-light">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Status</th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EMP001</td>
+                        <td class="fw-semibold">Ali Raza</td>
+                        <td>ali@company.com</td>
+                        <td>IT</td>
+                        <td><span class="badge-status bg-success-light">Active</span></td>
+                        <td class="text-center">
+                            <button class="btn-action edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-action del"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EMP002</td>
+                        <td class="fw-semibold">Ayesha Khan</td>
+                        <td>ayesha@company.com</td>
+                        <td>HR</td>
+                        <td><span class="badge-status bg-success-light">Active</span></td>
+                        <td class="text-center">
+                            <button class="btn-action edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-action del"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EMP003</td>
+                        <td class="fw-semibold">Usman Tariq</td>
+                        <td>usman@company.com</td>
+                        <td>Sales</td>
+                        <td><span class="badge-status bg-success-light">Active</span></td>
+                        <td class="text-center">
+                            <button class="btn-action edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-action del"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EMP004</td>
+                        <td class="fw-semibold">Sara Ahmed</td>
+                        <td>sara@company.com</td>
+                        <td>Marketing</td>
+                        <td><span class="badge-status bg-success-light">Active</span></td>
+                        <td class="text-center">
+                            <button class="btn-action edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-action del"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EMP005</td>
+                        <td class="fw-semibold">Hamza Ali</td>
+                        <td>hamza@company.com</td>
+                        <td>Finance</td>
+                        <td><span class="badge-status bg-success-light">Active</span></td>
+                        <td class="text-center">
+                            <button class="btn-action edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-action del"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <!-- bootstrap start -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap end -->
+
+     <!-- font awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+     <!-- css start -->
+      <link rel="stylesheet" href="style.css">
+     <!-- css end -->
+</head>
+<body>
+
+
+<!-- nav start -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary forwok">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold setwh" href="#"><img src="./assesst/logo (1).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Toman</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="./dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./employee.html" >Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./leave.html">Leave</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./profile.html">Profile</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./payslip.html">Pay-Slip</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./setting.html">Setting</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- nav end -->
+ <div class="container-fluid my-4" style="max-width: 600px; margin: 0 auto;">
+    <div class="card p-3 shadow-sm" style="border-radius: 12px;">
+        
+        <!-- Header: Title and Month Dropdown -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="fw-bold m-0 text-dark">Payslip</h4>
+            <select class="form-select form-select-sm w-auto font-12 fw-medium border-secondary-subtle">
+                <option>October 2025</option>
+                <option>September 2025</option>
+            </select>
+        </div>
+
+        <!-- Employee Metadata Details -->
+        <div class="row g-2 mb-3 border-bottom pb-2">
+            <div class="col-6">
+                <div class="txt-sub">Employee</div>
+                <div class="fw-bold text-dark font-14">Ali Raza</div>
+            </div>
+            <div class="col-6">
+                <div class="txt-sub">Employee ID</div>
+                <div class="fw-bold text-dark font-14">EMP001</div>
+            </div>
+        </div>
+
+        <!-- Payslip Breakdown Table List -->
+        <div class="border rounded overflow-hidden mb-3">
+            <!-- Row 1: Basic Salary -->
+            <div class="d-flex justify-content-between align-items-center p-2 border-bottom font-13">
+                <span class="text-primary-emphasis fw-medium">Basic Salary</span>
+                <span class="fw-semibold text-dark">50,000</span>
+            </div>
+            <!-- Row 2: Allowances -->
+            <div class="d-flex justify-content-between align-items-center p-2 border-bottom font-13">
+                <span class="text-primary-emphasis fw-medium">Allowances</span>
+                <span class="fw-semibold text-dark">10,000</span>
+            </div>
+            <!-- Row 3: Deductions -->
+            <div class="d-flex justify-content-between align-items-center p-2 border-bottom font-13">
+                <span class="text-primary-emphasis fw-medium">Deductions</span>
+                <span class="fw-semibold text-dark">-5,000</span>
+            </div>
+            <!-- Row 4: Net Salary (Exact Soft Green Highlight) -->
+            <div class="d-flex justify-content-between align-items-center p-2 bg-success-light font-14 fw-bold">
+                <span class="text-success">Net Salary</span>
+                <span class="text-success">55,000</span>
+            </div>
+        </div>
+
+        <!-- Action Utility Buttons -->
+        <div class="row g-2">
+            <div class="col-6">
+                <button class="btn btn-primary btn-sm w-100 py-2 font-13 fw-semibold d-flex align-items-center justify-content-center gap-2">
+                    <i class="fa-solid fa-print"></i> Print
+                </button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-outline-secondary btn-sm w-100 py-2 font-13 fw-semibold d-flex align-items-center justify-content-center gap-2 text-dark bg-white border-secondary-subtle">
+                    <i class="fa-solid fa-file-pdf text-primary"></i> Save as PDF
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</html>

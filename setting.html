@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+      <!-- bootstrap start -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap end -->
+
+     <!-- font awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+     <!-- css start -->
+      <link rel="stylesheet" href="style.css">
+     <!-- css end -->
+</head>
+<body>
+    
+<!-- nav start -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary forwok">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold setwh" href="#"><img src="./assesst/logo (1).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Toman</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link "  href="./dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./employee.html">Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./leave.html">Leave</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="./setting.html">Setting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./profile.html">Profile</a>
+        </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="./payslip">Pay-Slip</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- nav end -->
+
+
+<div class="container-fluid my-4" style="max-width: 500px;">
+    <div class="card p-3 shadow-sm border-0" style="border-radius: 12px; background: #fff;">
+        
+        <!-- Title & Tabs -->
+        <h4 class="fw-bold mb-3 text-dark">Company Settings</h4>
+        <ul class="nav nav-pills gap-1 mb-3 bg-light p-1 rounded-2" id="st" role="tablist">
+            <li class="nav-item flex-grow-1 text-center"><button class="nav-link btn-sm active w-100 py-1" data-bs-toggle="tab" data-bs-target="#t1" type="button" style="font-size: 12px;">General</button></li>
+            <li class="nav-item flex-grow-1 text-center"><button class="nav-link btn-sm w-100 py-1" data-bs-toggle="tab" data-bs-target="#t2" type="button" style="font-size: 12px;">Office Hours</button></li>
+            <li class="nav-item flex-grow-1 text-center"><button class="nav-link btn-sm w-100 py-1" data-bs-toggle="tab" data-bs-target="#t3" type="button" style="font-size: 12px;">Leave Policy</button></li>
+            <li class="nav-item flex-grow-1 text-center"><button class="nav-link btn-sm w-100 py-1" data-bs-toggle="tab" data-bs-target="#t4" type="button" style="font-size: 12px;">Other</button></li>
+        </ul>
+
+        <form class="tab-content" id="stC">
+            <!-- 1. General Tab (Exact Image Replica) -->
+            <div class="tab-pane fade show active" id="t1" role="tabpanel">
+                <div class="mb-2"><label class="lbl">Company Name</label><input type="text" class="form-control form-control-sm" value="Tech Solutions Ltd."></div>
+                <div class="mb-2"><label class="lbl">Address</label><textarea class="form-control form-control-sm" rows="2">123 Business Street, Karachi</textarea></div>
+                <div class="row g-2 mb-2">
+                    <div class="col-6"><label class="lbl">Start Time</label><input type="time" class="form-control form-control-sm" value="09:00"></div>
+                    <div class="col-6"><label class="lbl">End Time</label><input type="time" class="form-control form-control-sm" value="17:00"></div>
+                </div>
+                <div class="mb-2"><label class="lbl">Grace Minutes</label><input type="number" class="form-control form-control-sm" value="10"><span class="txt-sub">(Late by this many minutes is allowed)</span></div>
+                <div class="mb-3"><label class="lbl">Leave Quota (Annual)</label><input type="number" class="form-control form-control-sm" value="18"><span class="txt-sub">(Days per year)</span></div>
+            </div>
+
+            <!-- 2. Office Hours Tab -->
+            <div class="tab-pane fade" id="t2" role="tabpanel">
+                <label class="lbl mb-1">Working Days</label>
+                <div class="p-2 border rounded mb-2 bg-light">
+                    <div class="d-flex justify-content-between mb-1 pb-1 border-bottom small"><span>Mon - Fri</span><div class="form-check form-switch"><input class="form-check-input" type="checkbox" checked></div></div>
+                    <div class="d-flex justify-content-between mb-1 pb-1 border-bottom small"><span>Saturday</span><div class="form-check form-switch"><input class="form-check-input" type="checkbox"></div></div>
+                    <div class="d-flex justify-content-between small"><span>Sunday</span><div class="form-check form-switch"><input class="form-check-input" type="checkbox"></div></div>
+                </div>
+                <div class="mb-3"><label class="lbl">Break Duration (Mins)</label><input type="number" class="form-control form-control-sm" value="60"></div>
+            </div>
+
+            <!-- 3. Leave Policy Tab -->
+            <div class="tab-pane fade" id="t3" role="tabpanel">
+                <div class="mb-2"><label class="lbl">Max Consecutive Leaves</label><input type="number" class="form-control form-control-sm" value="5"></div>
+                <div class="mb-2"><label class="lbl">Notice Period (Days)</label><input type="number" class="form-control form-control-sm" value="3"></div>
+                <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="cf" checked><label class="form-check-label small" for="cf">Allow carry forward</label></div>
+            </div>
+
+            <!-- 4. Other Tab -->
+            <div class="tab-pane fade" id="t4" role="tabpanel">
+                <div class="mb-2"><label class="lbl">Currency Symbol</label><input type="text" class="form-control form-control-sm" value="PKR (Rs.)"></div>
+                <div class="mb-2"><label class="lbl">Alert Email</label><input type="email" class="form-control form-control-sm" value="hr@company.com"></div>
+                <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="ai" checked><label class="form-check-label small" for="ai">Enable AI Assistant</label></div>
+            </div>
+
+            <!-- Global Action Button -->
+            <button type="submit" class="btn btn-primary btn-sm w-100 py-2 fw-semibold">Save Changes</button>
+        </form>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</html>

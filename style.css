@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.redusize{
+    /* border: 2px solid red; */
+    backdrop-filter: blur(10%);
+    width: 90%;
+    margin-top: 90px;
+    margin-left:auto  ;
+    margin-right: auto;
+    /* max-height:550px ; */
+}
+.break{
+    /* border: 1px solid black; */
+    white-space: nowrap;
+    font-size: 10px;
+}
+.short{
+    color: blue;
+    font-size: 10px;
+    /* border:  1px solid black; */
+    /* margin-left: auto; */
+  white-space: nowrap;
+}
+.finput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pappapage{
+
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+}
+.usicn svg{
+    position: absolute;
+    top: 0;
+    width:30px ;
+    height: 30px;
+}
+.usicn  {
+    position: relative;
+    display: flex;
+   /* left: 20px;     */
+}
+.usicn  input.usinp{
+    padding-left: 40px;
+
+}
+.buttonsiz{
+   margin-left: 50px;
+}
+/* Base Application Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+
+/* dashbord file par kaam */
+
+
+
+
+
+
+/* Dashboard Box Layout */
+.dashboard-wrapper {
+    max-width: 620px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.015);
+    padding: 24px;
+    border: 1px solid #f1f5f9;
+}
+
+/* Stat Cards Customization */
+.stat-card {
+    background: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 12px;
+    padding: 16px;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.02);
+}
+
+/* Rounded Icon Base */
+.icon-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+/* Custom Text and Utility Colors */
+.text-dark-custom {
+    color: #0f172a;
+}
+
+.text-assistant-blue {
+    color: #1e3a8a;
+}
+
+.custom-number-align {
+    padding-left: 51px; /* Icon width + gap ke hisab se numbers ki perfect alignment*/
+}
+
+/* Individual Icon Colors */
+.bg-light-blue { background-color: #eff6ff; color: #3b82f6; }
+.bg-light-green { background-color: #f0fdf4; color: #22c55e; }
+.bg-light-orange { background-color: #fff7ed; color: #f97316; }
+.bg-light-purple { background-color: #faf5ff; color: #a855f7; }
+
+/* Activity Base Container */
+.activity-container {
+    background-color: #fafafa;
+    border: 1px solid #f1f5f9;
+}
+
+.activity-row {
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.activity-row:last-child {
+    border-bottom: none; /* Last row ki extra border line hatane ke liye */
+}
+
+.time-stamp {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.setwh img{
+    width: 50px;
+    height: 50px;
+    
+}
+.setwh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.forwok{
+    position: sticky;
+    top: 0;
+}
+/* emplyee file work */
+
+/* Card Layout (Full width aur clean background) */
+.card {
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Table Text & Padding Chota Kiya */
+.table th, .table td {
+    padding: 10px 14px !important;
+    font-size: 13px;
+}
+
+/* Status Badge Styling */
+.badge-status {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.bg-success-light {
+    background-color: #ecfdf5;
+    color: #10b981;
+}
+
+/* Action Buttons (Chote aur pixel perfect) */
+.btn-action {
+    border: 1px solid transparent;
+    background: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin: 0 2px;
+}
+.btn-action.edit { background-color: #eff6ff; color: #3b82f6; border-color: #dbeafe; }
+.btn-action.del { background-color: #fef2f2; color: #ef4444; border-color: #fee2e2; }
+
+
+
+/* leace file */
+/* Card Layout Adjustment */
+.card {
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Table Compact Style Setup */
+.table th, .table td {
+    padding: 10px 14px !important;
+    font-size: 13px;
+}
+
+/* Status Badges (Soft Palette) */
+.badge-status {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.status-pending {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+.status-approved {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+.status-rejected {
+    background-color: #fce8e6;
+    color: #c5221f;
+}
+
+/* Action Utility Buttons (Approve / Reject) */
+.btn-action {
+    border: 1px solid transparent;
+    background: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    margin: 0 2px;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+.btn-action.approve {
+    background-color: #10b981; /* Solid Green */
+}
+.btn-action.approve:hover:not([disabled]) {
+    background-color: #059669;
+}
+.btn-action.reject {
+    background-color: #ef4444; /* Solid Red */
+}
+.btn-action.reject:hover:not([disabled]) {
+    background-color: #dc2626;
+}
+
+/* setting page  */
+/* Custom Elements Styling */
+.lbl {
+    font-size: 11px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 2px;
+}
+
+.txt-sub {
+    font-size: 10px;
+    color: #94a3b8;
+    display: block;
+    margin-top: 1px;
+}
+
+.form-control, .form-control:focus {
+    font-size: 12px;
+    border-radius: 6px;
+    border-color: #cbd5e1;
+    box-shadow: none;
+}
+
+/* Nav Pills (Soft Premium Look) */
+.nav-pills .nav-link { color: #64748b; font-weight: 500; border-radius: 5px; }
+.nav-pills .nav-link.active { background-color: #0d6efd; color: #fff; }
+
+
+/*profile par work  */
+/* Center Layout Magic: Yeh poori screen ko target karega */
+.profile-center-wrapper {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    min-height: 100vh;         
+    background-color: #f8fafc; 
+    padding: 20px;
+}
+
+/* Dashboard Content Box Width Control */
+.profile-content-box {
+    width: 100%;
+    max-width: 500px;          /* Box ko darmayane size me rakhne ke liye */
+    background: #ffffff;
+}
+
+/* Icons & Labels Styles */
+.icon-shape {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.txt-label {
+    font-size: 10px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Colors palette */
+.bg-status-green { background-color: #e6f4ea; color: #137333; }
+.bg-status-blue { background-color: #e8f0fe; color: #1a73e8; }
+.bg-status-yellow { background-color: #fef7e0; color: #b06000; }
+.bg-status-purple { background-color: #f3e8ff; color: #6b21a8; }
+.bg-helper-blue { background-color: #eff6ff; }
+.cursor-pointer { cursor: pointer; transition: background 0.2s; }
+.cursor-pointer:hover { background-color: #dbeafe; }
+
+/* payslip end */
+/* Font and Typography Utilities */
+.font-12 { font-size: 12px; }
+.font-13 { font-size: 13px; }
+.font-14 { font-size: 14px; }
+
+.txt-sub {
+    font-size: 11px;
+    color: #64748b;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+/* Soft Green Highlight Background for Net Salary Row */
+.bg-success-light {
+    background-color: #ecfdf5;
+}
+
+/* Focus and Border Cleanups */
+.form-select:focus {
+    box-shadow: none;
+    border-color: #cbd5e1;
+}

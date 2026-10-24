@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+       <!-- bootstrap start -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap end -->
+
+     <!-- font awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+     <!-- css start -->
+      <link rel="stylesheet" href="style.css">
+     <!-- css end -->
+</head>
+<body>
+    
+<!-- nav start -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary forwok">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold setwh" href="#">
+      <img src="./assesst/logo (1).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Toman
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <!-- Sigle dot (.) ke sath check karein, agar folder badla hai to sirf file ka naam likhein -->
+          <a class="nav-link"  href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="employee.html">Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="leave.html">Leave</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="profile.html">Profile</a>
+        </li>
+        <!-- YAHAN PAR EXTRA </li> THA WOH MAINE HATA DIYA HAI -->
+        <li class="nav-item">
+          <a class="nav-link" href="payslip.html">Pay-Slip</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="setting.html">Setting</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- nav end -->
+
+
+
+
+<div class="profile-center-wrapper">
+    <div class="profile-content-box">
+        
+        <!-- Welcome Header -->
+        <div class="mb-3">
+            <h4 class="fw-bold m-0 text-dark">Hello, Ali Raza 👋</h4>
+            <small class="text-muted">Here's your overview for today</small>
+        </div>
+
+        <!-- 2x2 Stats Grid -->
+        <div class="row g-2 mb-3">
+            <!-- Today's Status -->
+            <div class="col-6">
+                <div class="p-2 border rounded bg-white d-flex align-items-center gap-2 h-100">
+                    <div class="icon-shape bg-status-green"><i class="fa-solid fa-circle-check"></i></div>
+                    <div>
+                        <div class="txt-label">Today's Status</div>
+                        <div class="fw-bold text-success" style="font-size: 14px;">Present</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This Month's Leaves -->
+            <div class="col-6">
+                <div class="p-2 border rounded bg-white d-flex align-items-center gap-2 h-100">
+                    <div class="icon-shape bg-status-blue"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div>
+                        <div class="txt-label">This Month's Leaves</div>
+                        <div class="fw-bold text-dark" style="font-size: 14px;">1 / 18</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attendance Status -->
+            <div class="col-6">
+                <div class="p-2 border rounded bg-white d-flex align-items-center gap-2 h-100">
+                    <div class="icon-shape bg-status-yellow"><i class="fa-solid fa-clock"></i></div>
+                    <div>
+                        <div class="txt-label">Attendance</div>
+                        <div class="fw-bold text-warning" style="font-size: 14px;">On Time</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Leave -->
+            <div class="col-6">
+                <div class="p-2 border rounded bg-white d-flex align-items-center gap-2 h-100">
+                    <div class="icon-shape bg-status-purple"><i class="fa-solid fa-calendar-plus"></i></div>
+                    <div>
+                        <div class="txt-label">Next Leave</div>
+                        <div class="fw-bold" style="font-size: 14px; color: #4f46e5;">In 7 days</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions Section -->
+        <div class="mb-3">
+            <h6 class="fw-bold text-dark mb-2" style="font-size: 13px;">Quick Actions</h6>
+            <div class="row g-2">
+                <div class="col-6">
+                    <button class="btn btn-light border w-100 p-2 d-flex align-items-center justify-content-center gap-2 small fw-semibold text-dark">
+                        <i class="fa-solid fa-pen-to-square text-primary"></i> Apply Leave
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-light border w-100 p-2 d-flex align-items-center justify-content-center gap-2 small fw-semibold text-dark">
+                        <i class="fa-solid fa-calendar-check text-primary"></i> View Attendance
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Smart Helper Banner -->
+        <div class="p-2 rounded-3 border d-flex align-items-center justify-content-between bg-helper-blue cursor-pointer">
+            <div class="d-flex align-items-center gap-2">
+                <div class="icon-shape bg-primary text-white" style="font-size: 16px;"><i class="fa-solid fa-robot"></i></div>
+                <div>
+                    <div class="fw-bold text-primary" style="font-size: 12px;">Need help?</div>
+                    <div class="text-muted" style="font-size: 11px;">Ask our smart helper</div>
+                </div>
+            </div>
+            <i class="fa-solid fa-arrow-right text-primary me-2"></i>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</html>
